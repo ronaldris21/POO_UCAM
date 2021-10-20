@@ -1,0 +1,80 @@
+SOBRECARGA DE METODOS
+	El mismo nombre pero con DIFERENTE lista de tipos de argumentos.
+	public int EnviarCorreo(String email);
+	public int EnviarCorreo(String email, String email2);
+	
+
+• Mensaje: unaCuenta.ingreso (100000).
+• Procedimiento: ingreso (unaCuenta,100000).
+• En un mensaje un argumento tiene una naturaleza especial: “Objeto receptor”.
+
+
+
+for(Tipo valor: nombreColeccion)
+{
+	//Codigo usando valor
+}
+
+Paso por valor
+	public static void sumar(int p)
+	{
+		p++;
+	}
+
+paso por referencia
+	public static vois sumar(miClase obj)
+	{
+		obj.dato++;
+	}
+
+Inicialización por defecto
+3. Gestión de la Memoria
+	Tipo Valor Inicial
+		boolean False
+		char Carácter ‘0’
+		byte, short, int, long 0
+		float +0.0f
+		double +0.0d
+		Referencia a objeto null
+
+
+
+
+final
+
+	public class cuenta{
+		persona final titular;
+		
+		public cuenta(persona p)
+		{
+			titular = p;
+		}
+		public persona getTitular() ///No puede tener SET
+		{
+			return titular;
+		}
+	}
+
+
+CONSTANTES
+
+	public class cuenta
+	{
+		private static final int MAX_OPERACIONES = 20;
+		private static final int SALDO_MINIMO = 20;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

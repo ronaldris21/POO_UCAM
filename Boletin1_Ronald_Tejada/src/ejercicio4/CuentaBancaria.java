@@ -5,8 +5,10 @@ public class CuentaBancaria {
 	private double saldo;
 	private static double totalSaldo;
 	
-	public CuentaBancaria() {
+	public CuentaBancaria(double valor) {
 		// TODO Auto-generated constructor stub
+		this.saldo = valor;	
+		CuentaBancaria.totalSaldo += valor;
 	}
 	
 	public double saldo() {
@@ -16,12 +18,21 @@ public class CuentaBancaria {
 		return CuentaBancaria.totalSaldo;
 	}
 	public boolean enNumerosRojos () {
-		return false;
+		return this.saldo<0;
+	}
+	public boolean enNumerosRojos(double cant)
+	{
+		return (this.saldo>=cant) ? true : false;
 	}
 	public void movimiento( double valor ) {
-		
+		///No valido porque pueden haber numeros "Rojos"
+		this.saldo += valor;	
+		CuentaBancaria.totalSaldo += valor;
 	}
-	public static void incCuentas () {
+	//Deprecated
+	public static void incCuentas () { 
+		///Me todo inutil, que reciba parametros de otras cuentas
+		//Ademas voy actualizando el totalSaldo en otros metodos
 		
 	}
 
