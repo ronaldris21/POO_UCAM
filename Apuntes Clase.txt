@@ -1,4 +1,4 @@
-SOBRECARGA DE METODOS
+﻿SOBRECARGA DE METODOS
 	El mismo nombre pero con DIFERENTE lista de tipos de argumentos.
 	public int EnviarCorreo(String email);
 	public int EnviarCorreo(String email, String email2);
@@ -69,6 +69,7 @@ CONSTANTES
 
 
 
+En Herencia, las clases abstractas no se usan
 
 
 
